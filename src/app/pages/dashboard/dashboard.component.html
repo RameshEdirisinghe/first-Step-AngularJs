@@ -1,3 +1,66 @@
-<p>dashboard works!</p>
-<h1>Hi</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card text-white bg-primary mb-3">
+                <div class="card-header">Students</div>
+                <div class="card-body">
+                    <h5 class="card-title">Total Students</h5>
+                    <p class="card-text">1500</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-header">Teachers</div>
+                <div class="card-body">
+                    <h5 class="card-title">Total Teachers</h5>
+                    <p class="card-text">100</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white bg-warning mb-3">
+                <div class="card-header">Classes</div>
+                <div class="card-body">
+                    <h5 class="card-title">Total Classes</h5>
+                    <p class="card-text">50</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white bg-danger mb-3">
+                <div class="card-header">Subjects</div>
+                <div class="card-body">
+                    <h5 class="card-title">Total Subjects</h5>
+                    <p class="card-text">30</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card mb-3">
+                <div class="card-header">Recent Activities</div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">Student John Doe enrolled in Math class</li>
+                        <li class="list-group-item">Teacher Jane Smith assigned homework</li>
+                        <li class="list-group-item">New class schedule published</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
+
+<table>
+    <tr *ngFor="let teacher of teacherList">
+        <td>{{teacher.id}}</td>
+        <td>{{teacher.name}}</td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+<input type="button" value="logOut" routerLink="/login">
